@@ -721,6 +721,10 @@ const char * const vmstat_text[] = {
 	"numa_local",
 	"numa_other",
 #endif
+
+#ifdef CONFIG_UKSM
+        "nr_uksm_zero_pages",
+#endif
 	"nr_anon_transparent_hugepages",
 	"nr_dirty_threshold",
 	"nr_dirty_background_threshold",
